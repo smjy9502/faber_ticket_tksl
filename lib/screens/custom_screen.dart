@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:faber_ticket_tksl/screens/song_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -138,7 +139,7 @@ class _CustomScreenState extends State<CustomScreen> {
                 child: ElevatedButton(
                   onPressed: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PhotoScreen()),
+                    MaterialPageRoute(builder: (context) => SongScreen()),
                   ),
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(80, 30), // 기존 150x50 → 120x40
